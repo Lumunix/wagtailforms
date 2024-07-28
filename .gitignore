@@ -1,0 +1,17 @@
+.cache
+.coverage
+.DS_Store
+.idea
+.postgres
+.python-version
+.tox
+.coverage.*
+**__pycache__**
+*.pyc
+/dist/
+/docs/_build/
+/htmlcov/
+/node_modules/
+/wagtailforms.egg-info/
+/build
+file*.mp4

@@ -1,0 +1,2 @@
+include LICENSE
+recursive-include wagtailforms *.py *.html *.js *.mo *.po
