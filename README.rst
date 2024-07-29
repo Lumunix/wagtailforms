@@ -33,18 +33,7 @@ Documentation
 
 Can be found on `readthedocs <http://wagtailforms.readthedocs.io/>`_.
 
-Screenshots
------------
 
-.. figure:: http://wagtailforms.readthedocs.io/en/latest/_images/screen_1.png
-   :width: 728 px
-
-   Example Front End
-
-.. figure:: http://wagtailforms.readthedocs.io/en/latest/_images/screen_3.png
-   :width: 728 px
-
-   Form Fields Selection
 
 Example site with docker
 ------------------------
