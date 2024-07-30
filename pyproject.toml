@@ -19,16 +19,18 @@ sphinxcontrib-spelling = ">=2.3.0"
 sphinx = ">=1.5.2"
 sphinx-autobuild = ">=0.6.0"
 karma_sphinx_theme = ">=0.0.6"
-mock = "==4.0.2"
-pytest-django = "==4.7.0"
-pytest = "==7.3.2"
-isort = {version = "==4.3.21", extras = ["pyproject"]}
-flake8 = "==3.7.9"
-flake8-blind-except = "==0.1.1"
-flake8-debugger = "3.1.0"
+mock = "==5.1.0"
+pytest-django = "==4.8.0"
+pytest = "==8.3.2"
+isort = {version = "==5.13.2", extras = ["pyproject"]}
+flake8 = "==7.1.0"
+flake8-blind-except = "==0.2.1"
+flake8-debugger = "4.1.2"
 wagtail-modeladmin = "^2.0.0"
 django-recaptcha = "^4.0.0"
 psycopg2-binary = "^2.9.9"
+tox = "^4.16.0"
+
 
 
 [build-system]
