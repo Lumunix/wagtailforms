@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     "wagtail_modeladmin",
     "wagtail.contrib.settings",
     "taggit",
-    'wagtailforms',
+    "wagtailforms",
     "tests",
 ]
 
