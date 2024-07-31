@@ -16,9 +16,7 @@ class DeleteViewTestCase(AppTestCase):
         s2 = FormSubmission.objects.create(form=form, form_data='{"foo":1}')
         FormSubmission.objects.create(form=form, form_data='{"foo":1}')
 
-        delete_url = reverse(
-            "wagtailforms:forms_delete_submissions", kwargs={"pk": form.pk}
-        )
+        delete_url = reverse("wagtailforms:forms_delete_submissions", kwargs={"pk": form.pk})
 
         self.invalid_delete_url = reverse(
             "wagtailforms:forms_delete_submissions", kwargs={"pk": 100}
@@ -27,9 +25,7 @@ class DeleteViewTestCase(AppTestCase):
         self.multiple_url = "{}?selected-submissions={}&selected-submissions={}".format(
             delete_url, s1.pk, s2.pk
         )
-        self.redirect_url = reverse(
-            "wagtailforms:forms_submissions", kwargs={"pk": form.pk}
-        )
+        self.redirect_url = reverse("wagtailforms:forms_submissions", kwargs={"pk": form.pk})
 
         self.client.login(username="user", password="password")
 

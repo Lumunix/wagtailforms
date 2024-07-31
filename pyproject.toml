@@ -30,6 +30,7 @@ wagtail-modeladmin = "^2.0.0"
 django-recaptcha = "^4.0.0"
 psycopg2-binary = "^2.9.9"
 tox = "^4.16.0"
+black = "^24.4.2"
 
 
 

@@ -15,9 +15,7 @@ class AdvancedSettingsViewTestCase(AppTestCase):
     def setUp(self):
         User.objects.create_superuser("user", "user@test.com", "password")
         self.form = Form.objects.get(pk=1)
-        self.advanced_url = reverse(
-            "wagtailforms:forms_advanced", kwargs={"pk": self.form.pk}
-        )
+        self.advanced_url = reverse("wagtailforms:forms_advanced", kwargs={"pk": self.form.pk})
         self.client.login(username="user", password="password")
 
     def test_get_responds(self):

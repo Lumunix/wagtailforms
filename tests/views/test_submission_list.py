@@ -23,12 +23,8 @@ class SubmissionListViewTestCase(AppTestCase):
         s2.save()
         FormSubmission.objects.create(form=form, form_data='{"foo":1}')
 
-        self.list_url = reverse(
-            "wagtailforms:forms_submissions", kwargs={"pk": form.pk}
-        )
-        self.invalid_list_url = reverse(
-            "wagtailforms:forms_submissions", kwargs={"pk": 100}
-        )
+        self.list_url = reverse("wagtailforms:forms_submissions", kwargs={"pk": form.pk})
+        self.invalid_list_url = reverse("wagtailforms:forms_submissions", kwargs={"pk": 100})
         self.filter_url = "{}?date_from=2017-01-01&date_to=2017-01-02&action=filter".format(
             self.list_url
         )
@@ -73,9 +69,7 @@ class ListViewPermissionTestCase(AppTestCase):
     def setUp(self):
         self.user = User.objects.create_user("user", "user@test.com", "password")
         self.form = Form.objects.get(pk=1)
-        self.list_url = reverse(
-            "wagtailforms:forms_submissions", kwargs={"pk": self.form.pk}
-        )
+        self.list_url = reverse("wagtailforms:forms_submissions", kwargs={"pk": self.form.pk})
 
     def test_no_user_no_access(self):
         response = self.client.get(self.list_url)

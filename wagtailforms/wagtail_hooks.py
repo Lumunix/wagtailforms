@@ -244,6 +244,4 @@ class WagtailFormsChooser(AdminChooser):
 
 @hooks.register("register_admin_viewset")
 def register_wagtailforms_chooser_viewset():
-    return WagtailFormsChooserViewSet(
-        "wagtailforms_chooser", url_prefix="wagtailforms-chooser"
-    )
+    return WagtailFormsChooserViewSet("wagtailforms_chooser", url_prefix="wagtailforms-chooser")
